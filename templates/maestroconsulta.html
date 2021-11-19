@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block title %}Resultado Consulta{% endblock %}
+
+{% block body %}
+<form action="detalle" method="POST">
+  <div class="mb-3">
+
+    {{ pagination.info }}
+    {{ pagination.links }}
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Field 01</th>
+          <th scope="col">Field 02</th>
+          <th scope="col">Field 03</th>
+          <th scope="col">Field 04</th>
+          <th scope="col">Field 05</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for record in records %}
+        <tr> 
+          <td>{{ record.2 }}</td>
+          <td>{{ record.3 }}</td>
+          <td>{{ record.4 }}</td>
+          <td>{{ record.5 }}</td>
+          <td>{{ record.6 }}</td>   
+          <td><input type="radio" name="optradio" value="{{ record.2 }}"></td>
+          <td><input type="submit" value="Ver Detalle"></td>     
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {{ pagination.links }}
+    
+  </div>
+</form>
+{% endblock %}
+  

@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %}Reto Azure{% endblock %}
+
+{% block body %}
+
+<section class="section-content py-5">
+
+		<h6>Reto Azure. <br> Competencias continuas.  </h6>
+        <p>es un evento trimestral, donde queremos que demuestres cuáles son tus habilidades y
+          conocimientos sobre distintos temas relacionados con el desarrollo de aplicaciones enfocadas a la nube.
+          Al participar en esta iniciativa podrás dar a conocer tus capacidades, mientras trabajas bajo tu propio ritmo y obtienes la
+          satisfacción de convertirte en un referente para toda la Compañía.</p>
+       
+		<p class="text-muted">Crea una aplicación web 100% Cloud (En Azure) que permita cargar 1 archivo CSV que tenga 20 columnas y almacene el
+      contenido en el menor tiempo posible, directamente en una base de datos.
+      La aplicación debe permitir la consulta por cualquiera de los 20 campos y mostrar el resultado en una tabla en el menor
+      tiempo posible. En la tabla se debe mostrar el contenido de 5 columnas y permitir ver el detalle del registro que se
+      seleccione.
+      La aplicación debe tener un menú con acceso a 3 páginas. En la página inicial "Carga" se debe permitir la carga del
+      archivo. La segunda página "Consulta" debe permitir realizar la consulta y la 3a página "Detalle" debe mostrar el detalle
+      del registro seleccionado en la tabla de la segunda página.
+      En la página de detalle se debe mostrar todos los campos del registro que se cargaron, junto a la fecha y hora de carga y
+      un campo llamado “cálculo” en el que se muestre el resultado de la siguiente fórmula:
+      Cálculo = (1 - Campo4 * Campo9) / (Campo6 – Campo4). </p>
+</section>
+{% endblock %}

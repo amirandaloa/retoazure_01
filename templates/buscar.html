@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block title %}Formulario de consultas{% endblock %}
+
+{% block body %}
+
+
+<br />
+<p>Seleccione cualquiera de los campos de la lista desplegable, luego escriba el valor y de click en el boton Buscar.</p>
+<form action="Consulta", method="POST">
+  <label>Seleccione un campo para realizar la busqueda</label><br />
+  <select name="keyword" class="form-select">
+      <option name="field01">Field 01</option>
+      <option name="field02">Field 02</option>
+      <option name="field03">Field 03</option>
+      <option name="field04">Field 04</option>
+      <option name="field05">Field 05</option>
+      <option name="field06">Field 06</option>
+      <option name="field07">Field 07</option>
+      <option name="field08">Field 08</option>
+      <option name="field09">Field 09</option>
+      <option name="field10">Field 10</option>
+      <option name="field11">Field 11</option>
+      <option name="field12">Field 12</option>
+      <option name="field13">Field 13</option>
+      <option name="field14">Field 14</option>
+      <option name="field15">Field 15</option>
+      <option name="field16">Field 16</option>
+      <option name="field17">Field 17</option>
+      <option name="field18">Field 18</option>
+      <option name="field19">Field 19</option>
+      <option name="field20">Field 20</option>
+  </select>
+  <br />
+  <div>
+    <div><label>Ingrese todo o parte del valor a buscar</label></div><br />
+    <div><input type="text" name="valueword"></div><br />
+    <div><button type="submit" class="btn btn-success" onclick="">Buscar</button></div>
+  </div>
+</form>
+  {% endblock %}

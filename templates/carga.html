@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block title %}Formulario para carga de archivo csv{% endblock %}
+
+{% block body %}
+
+<br />
+
+<p>Seleccione el archivo a cargar y de clic en el botón Cargar, al finalizar el proceso de carga será dirigido automaticamente al menú inicial.</p>
+<form action="Carga" method="POST" enctype="multipart/form-data">
+  <div class="input-group mb-3">
+    <div class="custom-file">
+      <input type="file"  name="newfile" class="custom-file-input" id="inputGroupFile02">
+    </div>
+  </div>
+  <div class="input-group-append">
+    <button type="submit" class="btn btn-success" onclick="">Cargar</button>
+  </div>
+</form>
+{% endblock %}
